@@ -10,4 +10,9 @@
 
 <br/>
 
+## Documentation
+
+- [Binding to Data](https://docs.devexpress.com/Dashboard/116771) 
+- [Dashboard Items](https://docs.devexpress.com/Dashboard/116521)
+
 
