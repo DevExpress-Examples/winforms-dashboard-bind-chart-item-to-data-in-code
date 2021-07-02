@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,10 +7,10 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{55D29F48-3B80-4B47-B070-7E51A8CFFB2E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>Dashboard_CreateChart</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -27,6 +27,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -36,35 +37,130 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Dashboard.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Dashboard.v15.1.Win, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.DataAccess.v15.1.UI, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGauges.v15.1.Win, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Charts.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Sparkline.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Dashboard.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Utils.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.1.Win, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Dashboard.v15.1.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Data.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.DataAccess.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1.UI, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.DataAccess.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Office.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.PivotGrid.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Printing.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.RichEdit.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.Utils.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraBars.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraCharts.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraCharts.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraCharts.v15.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraEditors.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraGauges.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Win, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraGauges.v15.1.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraGrid.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraLayout.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraPivotGrid.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraPrinting.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraRichEdit.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraRichEdit.v15.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <HintPath>C:\DXDlls\15.1.15\DevExpress.XtraTreeList.v15.1.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,18 +171,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Import Include="Microsoft.VisualBasic" />
-    <Import Include="System.Collections.Generic" />
-    <Import Include="System.Collections" />
-    <Import Include="System.Diagnostics" />
-    <Import Include="System.Linq" />
-    <Import Include="System.Xml.Linq" />
-    <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
-    <Import Include="System.Windows.Forms" />
-    <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.vb">
@@ -131,6 +215,7 @@
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My</CustomToolNamespace>
     </None>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
