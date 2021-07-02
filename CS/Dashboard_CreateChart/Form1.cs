@@ -9,7 +9,6 @@ namespace Dashboard_CreateChart {
             InitializeComponent();
         }
         private ChartDashboardItem CreateChart(DashboardObjectDataSource dataSource) {
-
             // Creates a chart dashboard item and specifies its data source.
             ChartDashboardItem chart = new ChartDashboardItem();
             chart.DataSource = dataSource;
@@ -38,7 +37,6 @@ namespace Dashboard_CreateChart {
             return chart;
         }
         private void Form1_Load(object sender, EventArgs e) {
-
             // Creates a dashboard and sets it as the currently opened dashboard in the dashboard viewer.
             dashboardViewer1.Dashboard = new Dashboard();
 
