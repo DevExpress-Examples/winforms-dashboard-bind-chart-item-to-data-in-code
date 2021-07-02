@@ -6,17 +6,13 @@
 # Dashboard for WinForms - How to bind a Chart dashboard item to data in code
 
 
-<p>The following example demonstrates how to bind a <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument14719">Chart dashboard item</a> to data in code.</p>
-
-<br/>
-
+The following example demonstrates how to bind a [Chart](https://docs.devexpress.com/Dashboard/14719/winforms-dashboard/winforms-designer/create-dashboards-in-the-winforms-designer/dashboard-item-settings/chart) dashboard item to data in code.
 ## Documentation
 
 - [Binding to Data](https://docs.devexpress.com/Dashboard/116771) 
 - [Dashboard Items](https://docs.devexpress.com/Dashboard/116521)
 
 ## More Examples 
-* [How to add window calculations for numeric measures in code](https://github.com/DevExpress-Examples/winforms-dashboard-window-calculation-example)
 * [How to Bind a Card Dashboard Item to Data in Code](https://github.com/DevExpress-Examples/how-to-bind-a-card-dashboard-item-to-data-in-code) 
 * [How to bind a Treemap dashboard item to data in code](https://github.com/DevExpress-Examples/how-to-bind-a-treemap-dashboard-item-to-data-in-code-t429531)
 * [How to bind a Bound Image dashboard item to data in code](https://github.com/DevExpress-Examples/how-to-bind-a-bound-image-dashboard-item-to-data-in-code-t382366)
@@ -27,5 +23,4 @@
 * [How to bind a Choropleth Map dashboard item to data in code](https://github.com/DevExpress-Examples/how-to-bind-a-choropleth-map-dashboard-item-to-data-in-code-e5010)
 * [How to bind a Geo Point Map dashboard item to data in code](https://github.com/DevExpress-Examples/how-to-bind-a-geo-point-map-dashboard-item-to-data-in-code-e5036)
 * [How to bind a Pie Map dashboard item to data in code](https://github.com/DevExpress-Examples/how-to-bind-a-pie-map-dashboard-item-to-data-in-code-t119627)
-
-
+* [How to add window calculations for numeric measures in code](https://github.com/DevExpress-Examples/winforms-dashboard-window-calculation-example)
