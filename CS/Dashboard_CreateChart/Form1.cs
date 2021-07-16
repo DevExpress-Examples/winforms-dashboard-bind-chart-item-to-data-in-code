@@ -1,10 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
-using DevExpress.DashboardCommon;
-using DevExpress.DataAccess;
+﻿using DevExpress.DashboardCommon;
+using DevExpress.XtraEditors;
+using System;
 
 namespace Dashboard_CreateChart {
-    public partial class Form1 : Form {
+    public partial class Form1 : XtraForm {
         public Form1() {
             InitializeComponent();
         }
