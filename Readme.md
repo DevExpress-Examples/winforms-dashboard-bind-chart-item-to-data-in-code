@@ -3,15 +3,14 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4767)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Form1.cs](./CS/Dashboard_CreateChart/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_CreateChart/Form1.vb))
-<!-- default file list end -->
 # Dashboard for WinForms - How to bind a Chart dashboard item to data in code
 
-
 The following example demonstrates how to bind a [Chart](https://docs.devexpress.com/Dashboard/14719/winforms-dashboard/winforms-designer/create-dashboards-in-the-winforms-designer/dashboard-item-settings/chart) dashboard item to data in code.
+
+## Files to Review
+* [Form1.cs](./CS/Dashboard_CreateChart/Form1.cs) (VB: [Form1.vb](./VB/Dashboard_CreateChart/Form1.vb))
+
 ## Documentation
 
 - [Binding to Data](https://docs.devexpress.com/Dashboard/116771) 
