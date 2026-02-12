@@ -30,7 +30,7 @@ The following example demonstrates how to bind a [Chart](https://docs.devexpress
 * [How to bind a Pie Map dashboard item to data in code](https://github.com/DevExpress-Examples/how-to-bind-a-pie-map-dashboard-item-to-data-in-code-t119627)
 * [How to add window calculations for numeric measures in code](https://github.com/DevExpress-Examples/winforms-dashboard-window-calculation-example)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-dashboard-bind-chart-item-to-data-in-code&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-dashboard-bind-chart-item-to-data-in-code&~~~was_helpful=no)
 
